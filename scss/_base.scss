@@ -1,0 +1,84 @@
+header,section{
+	//border: solid 1px black;
+	// border-radius: 10px;
+	// position: relative;
+	// min-height: 200px;
+
+&::after{
+	@include info;
+ }//end after
+}//end box
+
+header{
+	background: var(--page-bg);
+	//&::after{content: "header"};
+	grid-area:title;
+	background: url('../img/title1.png') center no-repeat;
+	min-height: 200px;
+	h1{
+		position: absolute;
+		left: -999em;
+		top: -999em;
+	}
+
+}
+h3{
+	font-family: $textbody;
+	text-align: center;
+}
+p{
+	font-family: $textbody;
+}
+#main{
+	background: var(--main-bg);
+	grid-area:copy;
+	border: solid 1px black;
+}
+#home{
+	background: var(--sec-bg);
+	grid-area:home;
+}
+#menu{
+	background: var(--sec-bg);
+	grid-area:menu;
+}
+#career{
+	background: var(--sec-bg);
+	grid-area:career;
+
+}
+#contact{
+	background: var(--sec-bg);
+	grid-area:contact;
+
+}
+#appitizer{
+	background: var(--sec-bg);
+	grid-area:appitizer;
+	border: solid 1px black;
+}
+#mcourse{
+	background: var(--sec-bg);
+	grid-area:mcourse;
+	border: solid 1px black;
+}
+#drinks{
+	background: var(--sec-bg);
+	grid-area:drinks;
+	border: solid 1px black;
+}
+#application{
+	background: var(--sec-bg);
+	grid-area:application;
+	border: solid 1px black;
+}
+#contactus{
+	background: var(--sec-bg);
+	grid-area:contactus;
+	border: solid 1px black;
+}
+#location{
+	background: var(--sec-bg);
+	grid-area:location;
+	border: solid 1px black;
+}
