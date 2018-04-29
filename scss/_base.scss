@@ -14,7 +14,7 @@ header{
 	//&::after{content: "header"};
 	grid-area:title;
 	background: url('../img/title1.png') center no-repeat;
-	min-height: 200px;
+	min-height: 196px;
 	h1{
 		position: absolute;
 		left: -999em;
@@ -32,11 +32,13 @@ p{
 #main{
 	background: var(--main-bg);
 	grid-area:copy;
-	border: solid 1px black;
+	// border: solid 1px black;
+	background: url('../img/banner.png') center no-repeat;
 }
 #home{
 	background: var(--sec-bg);
 	grid-area:home;
+	border: solid 1px black;
 }
 #menu{
 	background: var(--sec-bg);

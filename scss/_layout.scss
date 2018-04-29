@@ -1,10 +1,10 @@
 body{
-	margin:40px;
+	margin:20px;
 }
 .site{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows:repeat(6,1fr);
+	grid-template-rows:1fr 6% 3fr 1fr 1fr 1fr;
 	grid-gap: 1em 1.5em;
 
 		grid-template-areas:
@@ -25,7 +25,7 @@ body{
 		"title title title title title title title title"
 		"home home menu menu career career contact contact"
 		"copy copy copy copy copy copy copy copy "
-		"appitizer appitizer appitizer mcourse mcourse mcourse drinks drinks"
+		"appitizer appitizer mcourse mcourse mcourse mcourse drinks drinks"
 		"application application application application application application application application"
 		"contactus contactus contactus contactus location location location location";
 	}
