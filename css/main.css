@@ -7,6 +7,7 @@
  *    IE on Windows Phone and in iOS.
  */
 @import url("https://fonts.googleapis.com/css?family=Arimo");
+@import url("https://fonts.googleapis.com/css?family=Rye");
 html {
   line-height: 1.15;
   /* 1 */
@@ -519,6 +520,55 @@ textarea {
   padding: 0.2em 0;
 }
 
+.icon-sprite, .icon-fb, .icon-insta, .icon-link, .icon-twitter {
+  background-image: url('../img/icon-sb59dd43935.png');
+  background-repeat: no-repeat;
+}
+
+.icon-fb {
+  background-position: 0 -100px;
+}
+.icon-fb:hover, .icon-fb.fb-hover {
+  background-position: 0 0;
+}
+
+.icon-insta {
+  background-position: 0 -300px;
+}
+.icon-insta:hover, .icon-insta.insta-hover {
+  background-position: 0 -200px;
+}
+
+.icon-link {
+  background-position: 0 -500px;
+}
+.icon-link:hover, .icon-link.link-hover {
+  background-position: 0 -400px;
+}
+
+.icon-twitter {
+  background-position: 0 -700px;
+}
+.icon-twitter:hover, .icon-twitter.twitter-hover {
+  background-position: 0 -600px;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
+ul li a {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+ul li a span {
+  position: absolute;
+  top: -9999em;
+  left: -9999em;
+}
+
 header::after, section::after {
   display: block;
   position: absolute;
@@ -545,76 +595,116 @@ header h1 {
   top: -999em;
 }
 
-h3 {
-  font-family: "Arimo", sans-serif;
+h2 {
+  font-family: "Rye", cursive;
   text-align: center;
+  font-size: 20px;
+}
+
+h3 {
+  font-family: "Rye", cursive;
+  text-align: center;
+  font-size: 30px;
 }
 
 p {
+  padding: 15px;
   font-family: "Arimo", sans-serif;
+}
+
+li {
+  list-style: none;
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: black;
+  font-weight: bold;
+}
+
+a:active {
+  color: #ff6943;
+}
+
+.bouldermap {
+  width: 550px;
+  height: 400px;
 }
 
 #main {
   background: var(--main-bg);
   grid-area: copy;
+  border: solid 1px black;
   background: url("../img/banner.png") center no-repeat;
 }
 
 #home {
   background: var(--sec-bg);
   grid-area: home;
-  border: solid 1px black;
+  background: rgba(244, 42, 2, 0.8);
 }
 
 #menu {
   background: var(--sec-bg);
   grid-area: menu;
+  background: rgba(244, 42, 2, 0.8);
 }
 
 #career {
   background: var(--sec-bg);
   grid-area: career;
+  background: rgba(244, 42, 2, 0.8);
 }
 
 #contact {
   background: var(--sec-bg);
   grid-area: contact;
+  background: rgba(244, 42, 2, 0.8);
 }
 
 #appitizer {
   background: var(--sec-bg);
   grid-area: appitizer;
-  border: solid 1px black;
+  background: rgba(255, 195, 0, 0.6);
 }
 
 #mcourse {
   background: var(--sec-bg);
   grid-area: mcourse;
-  border: solid 1px black;
+  background: rgba(255, 195, 0, 0.6);
 }
 
 #drinks {
   background: var(--sec-bg);
   grid-area: drinks;
-  border: solid 1px black;
+  background: rgba(255, 195, 0, 0.6);
 }
 
 #application {
   background: var(--sec-bg);
   grid-area: application;
-  border: solid 1px black;
+  background: rgba(244, 42, 2, 0.8);
 }
 
 #contactus {
   background: var(--sec-bg);
   grid-area: contactus;
-  border: solid 1px black;
+  background: rgba(255, 195, 0, 0.6);
 }
 
 #location {
   background: var(--sec-bg);
   grid-area: location;
-  border: solid 1px black;
+  background: rgba(255, 195, 0, 0.6);
 }
 
 /* ==========================================================================
@@ -787,16 +877,30 @@ body {
   margin: 20px;
 }
 
-.site {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 6% 3fr 1fr 1fr 1fr;
-  grid-gap: 1em 1.5em;
-  grid-template-areas: "title title title title title title title title" "home home menu menu career career contact contact" "copy copy copy copy copy copy copy copy " "appitizer appitizer mcourse mcourse drinks drinks" "application application application application application application application application" "contactus contactus contactus contactus location location location location";
-}
-
-@media screen and (min-width: 737px) and (max-width: 1680px) {
+@media screen and (min-width: 737px) and (max-width: 1690px) {
   .site {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr .1fr 2.9fr 3fr 2fr 3fr;
+    grid-gap: 1em 1em;
     grid-template-areas: "title title title title title title title title" "home home menu menu career career contact contact" "copy copy copy copy copy copy copy copy " "appitizer appitizer mcourse mcourse mcourse mcourse drinks drinks" "application application application application application application application application" "contactus contactus contactus contactus location location location location";
+  }
+}
+@media screen and (min-width: 506px) and (max-width: 736px) {
+  .site {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px .1fr .1fr 550px 1fr 1.3fr 1fr 2fr;
+    grid-gap: 1em 1em;
+    grid-template-areas: ". . title title title title . ." "home home home home menu menu menu menu" "career career career career contact contact contact contact" "copy copy copy copy copy copy copy copy" "appitizer appitizer appitizer appitizer drinks drinks drinks drinks" ". mcourse mcourse mcourse mcourse mcourse mcourse ." "application application application application application application application application" "contactus contactus contactus contactus location location location location";
+  }
+}
+@media screen and (max-width: 505px) {
+  .site {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px .1fr .1fr .1fr .1fr 550px 300px 300px 300px 400px 500px 600px;
+    grid-gap: 1em 1em;
+    grid-template-areas: "title title title title title title title title" "home home home home home home home home" "menu menu menu menu menu menu menu menu" "career career career career career career career career" "contact contact contact contact contact contact contact contact" "copy copy copy copy copy copy copy copy" "appitizer appitizer appitizer appitizer appitizer appitizer appitizer appitizer" "mcourse mcourse mcourse mcourse mcourse mcourse mcourse mcourse" "drinks drinks drinks drinks drinks drinks drinks drinks" "application application application application application application application application" "contactus contactus contactus contactus contactus contactus contactus contactus" "location location location location location location location location";
   }
 }

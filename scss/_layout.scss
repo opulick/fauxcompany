@@ -1,26 +1,14 @@
 body{
 	margin:20px;
 }
-.site{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows:1fr 6% 3fr 1fr 1fr 1fr;
-	grid-gap: 1em 1.5em;
-
-		grid-template-areas:
-		"title title title title title title title title"
-		"home home menu menu career career contact contact"
-		"copy copy copy copy copy copy copy copy "
-		"appitizer appitizer mcourse mcourse drinks drinks"
-		"application application application application application application application application"
-		"contactus contactus contactus contactus location location location location";
-}
 // Web page view ------------------------------------------------------------------------------
-@media screen and (min-width: 737px)and (max-width: 1680px){
-	// 	body{
-	// 	background: blue;
-	// }
+@media screen and (min-width: 737px)and (max-width: 1690px){
+	
 	.site{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows:1fr .1fr 2.9fr 3fr 2fr 3fr;
+		grid-gap: 1em 1em;
 		grid-template-areas:
 		"title title title title title title title title"
 		"home home menu menu career career contact contact"
@@ -31,5 +19,43 @@ body{
 	}
 }
 // Tablet view ------------------------------------------------------------------------------
-
+@media screen and (min-width: 506px) and (max-width: 736px){
+	.site{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows:200px .1fr .1fr 550px 1fr 1.3fr 1fr 2fr;
+		grid-gap: 1em 1em;
+		grid-template-areas:
+		". . title title title title . ."
+		"home home home home menu menu menu menu"
+		"career career career career contact contact contact contact"
+		"copy copy copy copy copy copy copy copy"
+		"appitizer appitizer appitizer appitizer drinks drinks drinks drinks"
+		". mcourse mcourse mcourse mcourse mcourse mcourse ."
+		"application application application application application application application application"
+		"contactus contactus contactus contactus location location location location";
+	}
+}
 // Phone view ------------------------------------------------------------------------------
+@media screen and (max-width: 505px){
+	.site{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows:200px .1fr .1fr .1fr .1fr 550px 300px 300px 300px 400px 500px 600px;
+		grid-gap: 1em 1em;
+		grid-template-areas:
+		"title title title title title title title title"
+		"home home home home home home home home"
+		"menu menu menu menu menu menu menu menu"
+		"career career career career career career career career"
+		"contact contact contact contact contact contact contact contact"
+		"copy copy copy copy copy copy copy copy"
+		"appitizer appitizer appitizer appitizer appitizer appitizer appitizer appitizer"
+		"mcourse mcourse mcourse mcourse mcourse mcourse mcourse mcourse"
+		"drinks drinks drinks drinks drinks drinks drinks drinks"
+		"application application application application application application application application"
+		"contactus contactus contactus contactus contactus contactus contactus contactus"
+		"location location location location location location location location"
+		;
+	}
+}
