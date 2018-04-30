@@ -569,6 +569,10 @@ ul li a span {
   left: -9999em;
 }
 
+ul li {
+  font-family: "Arimo", sans-serif;
+}
+
 header::after, section::after {
   display: block;
   position: absolute;
@@ -900,7 +904,7 @@ body {
   .site {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr .1fr 2.5fr 2fr 1fr 2.7fr;
+    grid-template-rows: 200px .1fr 550px 500px 1fr 600px;
     grid-gap: 1em 1em;
     grid-template-areas: "title title title title title title title title" "home home menu menu career career contact contact" "copy copy copy copy copy copy copy copy " "appitizer appitizer mcourse mcourse mcourse mcourse drinks drinks" "application application application application application application application application" "contactus contactus contactus contactus location location location location";
   }
@@ -918,7 +922,7 @@ body {
   .site {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 200px .1fr .1fr .1fr .1fr 550px 450px 650px 450px 400px 500px 600px;
+    grid-template-rows: 200px .1fr .1fr .1fr .1fr 550px 450px 650px 450px 475px 500px 600px;
     grid-gap: 1em 1em;
     grid-template-areas: "title title title title title title title title" "home home home home home home home home" "menu menu menu menu menu menu menu menu" "career career career career career career career career" "contact contact contact contact contact contact contact contact" "copy copy copy copy copy copy copy copy" "appitizer appitizer appitizer appitizer appitizer appitizer appitizer appitizer" "mcourse mcourse mcourse mcourse mcourse mcourse mcourse mcourse" "drinks drinks drinks drinks drinks drinks drinks drinks" "application application application application application application application application" "contactus contactus contactus contactus contactus contactus contactus contactus" "location location location location location location location location";
   }

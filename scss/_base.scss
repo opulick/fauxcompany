@@ -17,7 +17,11 @@ ul{
 		}//icons
 	}//li
 }//ul
-
+ul{
+	li{
+		font-family: $textbody;
+	}
+}
 
 header,section{
 	//border: solid 1px black;
@@ -41,7 +45,6 @@ header{
 		left: -999em;
 		top: -999em;
 	}
-
 }
 h2{
 	font-family: $headfont;
