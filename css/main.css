@@ -556,7 +556,7 @@ textarea {
 ul li {
   list-style: none;
   display: inline-block;
-  padding: 10px;
+  padding: 5px;
 }
 ul li a {
   display: inline-block;
@@ -614,7 +614,6 @@ p {
 
 li {
   list-style: none;
-  padding: 5px;
 }
 
 a {
@@ -638,12 +637,28 @@ a:active {
 .bouldermap {
   width: 550px;
   height: 400px;
+  padding-left: 140px;
+}
+
+.food {
+  text-align: center;
+}
+
+.app {
+  text-align: center;
+}
+
+.cocktail {
+  text-align: center;
+}
+
+.address {
+  text-align: center;
 }
 
 #main {
   background: var(--main-bg);
   grid-area: copy;
-  border: solid 1px black;
   background: url("../img/banner.png") center no-repeat;
 }
 
@@ -651,24 +666,28 @@ a:active {
   background: var(--sec-bg);
   grid-area: home;
   background: rgba(244, 42, 2, 0.8);
+  padding: 5px;
 }
 
 #menu {
   background: var(--sec-bg);
   grid-area: menu;
   background: rgba(244, 42, 2, 0.8);
+  padding: 5px;
 }
 
 #career {
   background: var(--sec-bg);
   grid-area: career;
   background: rgba(244, 42, 2, 0.8);
+  padding: 5px;
 }
 
 #contact {
   background: var(--sec-bg);
   grid-area: contact;
   background: rgba(244, 42, 2, 0.8);
+  padding: 5px;
 }
 
 #appitizer {
@@ -881,7 +900,7 @@ body {
   .site {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr .1fr 2.9fr 3fr 2fr 3fr;
+    grid-template-rows: 1fr .1fr 2.5fr 2fr 1fr 2.7fr;
     grid-gap: 1em 1em;
     grid-template-areas: "title title title title title title title title" "home home menu menu career career contact contact" "copy copy copy copy copy copy copy copy " "appitizer appitizer mcourse mcourse mcourse mcourse drinks drinks" "application application application application application application application application" "contactus contactus contactus contactus location location location location";
   }
@@ -899,7 +918,7 @@ body {
   .site {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 200px .1fr .1fr .1fr .1fr 550px 300px 300px 300px 400px 500px 600px;
+    grid-template-rows: 200px .1fr .1fr .1fr .1fr 550px 450px 650px 450px 400px 500px 600px;
     grid-gap: 1em 1em;
     grid-template-areas: "title title title title title title title title" "home home home home home home home home" "menu menu menu menu menu menu menu menu" "career career career career career career career career" "contact contact contact contact contact contact contact contact" "copy copy copy copy copy copy copy copy" "appitizer appitizer appitizer appitizer appitizer appitizer appitizer appitizer" "mcourse mcourse mcourse mcourse mcourse mcourse mcourse mcourse" "drinks drinks drinks drinks drinks drinks drinks drinks" "application application application application application application application application" "contactus contactus contactus contactus contactus contactus contactus contactus" "location location location location location location location location";
   }

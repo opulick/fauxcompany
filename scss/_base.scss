@@ -4,7 +4,7 @@ ul{
 	li{
 	list-style: none;
 	display: inline-block;
-	padding: 10px;
+	padding: 5px;
 	a{
 		display: inline-block;
 		width: 100px;
@@ -60,7 +60,7 @@ p{
 li{
 	list-style: none;
 	//background: rgba(244,42,2,.8);
-	padding: 5px;
+	// padding: 5px;
 }
 a{
 	text-decoration: none;
@@ -80,12 +80,25 @@ a:active{
 .bouldermap{
 	width: 550px;
 	height: 400px;
+	padding-left: 140px;
+}
+.food{
+	text-align: center;
+}
+.app{
+	text-align: center;
+}
+.cocktail{
+	text-align: center;
+}
+.address{
+	text-align: center;
 }
 
 #main{
 	background: var(--main-bg);
 	grid-area:copy;
-	border: solid 1px black;
+	//border: solid 1px black;
 	background: url('../img/banner.png') center no-repeat;
 }
 #home{
@@ -93,22 +106,26 @@ a:active{
 	grid-area:home;
 	//border: solid 1px black;
 	background: rgba(244,42,2,.8);
+	padding: 5px;
 }
 #menu{
 	background: var(--sec-bg);
 	grid-area:menu;
 	//border: solid 1px black;
 	background: rgba(244,42,2,.8);
+	padding: 5px;
 }
 #career{
 	background: var(--sec-bg);
 	grid-area:career;
 	background: rgba(244,42,2,.8);
+	padding: 5px;
 }
 #contact{
 	background: var(--sec-bg);
 	grid-area:contact;
 	background: rgba(244,42,2,.8);
+	padding: 5px;
 }
 #appitizer{
 	background: var(--sec-bg);

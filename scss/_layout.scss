@@ -7,7 +7,7 @@ body{
 	.site{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-		grid-template-rows:1fr .1fr 2.9fr 3fr 2fr 3fr;
+		grid-template-rows:1fr .1fr 2.5fr 2fr 1fr 2.7fr;
 		grid-gap: 1em 1em;
 		grid-template-areas:
 		"title title title title title title title title"
@@ -41,7 +41,7 @@ body{
 	.site{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-		grid-template-rows:200px .1fr .1fr .1fr .1fr 550px 300px 300px 300px 400px 500px 600px;
+		grid-template-rows:200px .1fr .1fr .1fr .1fr 550px 450px 650px 450px 400px 500px 600px;
 		grid-gap: 1em 1em;
 		grid-template-areas:
 		"title title title title title title title title"
